@@ -5,10 +5,7 @@ import com.example.testspringbootapp.springboot_test.models.TransaccionDto;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -27,6 +24,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("integracion_wc")
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class CuentaControllerWebTestClientTests {
 
